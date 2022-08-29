@@ -34,3 +34,12 @@ Link: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
   helm uninstall jenkins -n jenkins
 
 ```
+
+## Get Password after installing chart
+
+```shell
+
+  kubectl exec --namespace jenkins -it svc/jenkins -c jenkins -- /bin/cat /run/secrets/additional/chart-admin-password && echo
+  # use this password to login with the account "admin"
+
+```
