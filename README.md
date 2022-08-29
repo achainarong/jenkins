@@ -35,7 +35,7 @@ Link: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
 
 ```
 
-## Get Password after installing chart
+## Get password after installing chart
 
 ```shell
 
